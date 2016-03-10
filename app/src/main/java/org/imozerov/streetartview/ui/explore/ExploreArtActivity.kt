@@ -61,7 +61,7 @@ class ExploreArtActivity : AppCompatActivity(), ArtObjectDetailOpener {
         val addArtObjectSubscription = RxView.clicks(add_art_object_button)
                 .subscribeOn(AndroidSchedulers.mainThread())
                 .subscribe {
-                    dataSource.addArtObjectStub()
+//                    startActivity(Intent(this@ExploreArtActivity, AddArtObjectActivity::class.java))
                 }
 
         compositeSubscription = CompositeSubscription();

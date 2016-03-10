@@ -1,6 +1,7 @@
 package org.imozerov.streetartview;
 
 import org.imozerov.streetartview.storage.DataSource;
+import org.imozerov.streetartview.ui.add.AddArtObjectPresenter;
 import org.imozerov.streetartview.ui.detail.DetailArtObjectActivity;
 import org.imozerov.streetartview.ui.detail.ImageViewActivity;
 import org.imozerov.streetartview.ui.explore.ArtListPresenter;
@@ -21,4 +22,5 @@ public interface AppComponent {
     void inject(DetailArtObjectActivity detailArtObjectActivity);
     void inject(ImageViewActivity imageViewActivity);
     void inject(DataSource dataSource);
+    void inject(AddArtObjectPresenter addArtObjectPresenter);
 }
